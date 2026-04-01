@@ -5,6 +5,7 @@ from datetime import datetime
 client = MongoClient("mongodb+srv://shivjot:shiv007@cluster0.mrltthq.mongodb.net/?appName=Cluster0")
 db = client["spam_db"]
 collection = db["predictions"]
+
 import pandas as pd
 import re
 from flask import Flask, request, render_template
@@ -79,6 +80,7 @@ def predict():
 
 # 🔹 Run app
 import os
+client = MongoClient(os.getenv("MONGO_URI"))
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
