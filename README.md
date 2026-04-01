@@ -40,7 +40,8 @@ SpamShield-AI is a machine learning-based web application that detects spam mess
    python app.py
 
 4. Open in browser
-   http://127.0.0.1:5000
+   ## 🌐 Live Demo
+https://spamshield-ai-production.up.railway.app/
 
 ## ☁️ Deployment
 
