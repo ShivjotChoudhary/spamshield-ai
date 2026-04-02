@@ -35,14 +35,14 @@ X = tfidf.fit_transform(df['message'])
 # 🔹 Train model
 model = MultinomialNB()
 model.fit(X, df['label'])
-
+#checking the accuracy:-
 from sklearn.metrics import accuracy_score
 y_pred = model.predict(X)
 accuracy = accuracy_score(df['label'], y_pred)
 
 print("Model Accuracy:", accuracy)
 
-
+#Cross-Validation:-
 from sklearn.model_selection import cross_val_score
 
 scores = cross_val_score(model, X, df['label'], cv=5)
