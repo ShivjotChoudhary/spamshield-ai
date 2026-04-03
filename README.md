@@ -46,7 +46,7 @@ https://spamshield-ai-m5cs.onrender.com
 
 ## ☁️ Deployment
 
-The application is deployed using Railway and connected to MongoDB Atlas for cloud data storage.
+The application is deployed using Render and connected to MongoDB Atlas for cloud data storage.
 
 ## 📁 Project Structure
 
